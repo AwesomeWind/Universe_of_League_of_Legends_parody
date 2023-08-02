@@ -1,0 +1,39 @@
+#foot {
+  position: relative;
+    display: flex;
+    flex-flow: column;
+    background-color: #121212;
+    height: 248px;
+    border-top: solid 2px #937341;
+    z-index: 999;
+}
+
+#foot div {
+    margin: 42px auto;
+}
+
+#foot p {
+    margin: 5px auto;
+    color: #c4b998;
+}
+
+#foot p:nth-child(2) {
+    margin-top: 5px;
+}
+
+#foot a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #937341;
+}
+
+#foot a:hover {
+    color: #c4b998;
+}
+
+.tencent_logo {
+    width: 330px;
+    height: 66px;
+    background-color: white;
+    border-radius: 5px;
+}

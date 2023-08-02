@@ -1,0 +1,80 @@
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+    /* 让溢出的内容隐藏，实现“部分展示”效果 */
+}
+.slick-bt{
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 9;
+    top: 300px;
+}
+.slick-bt img{
+    width: 50px;
+    left: 60px;
+}
+.prev{
+    left: 200px;
+}
+.next{
+    right: 200px;
+}
+.next:active,
+.prev:active{
+    animation: jello-horizontal 0.3s both;
+}
+.slider-item {
+    float: left;
+    /* 让每个轮播项浮动，以实现横向排列 */
+}
+.slick-center {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.slider-item img {
+    width: 90%;
+    margin: 0 auto;
+    /* 让图片宽度自适应 */
+    height: auto;
+    /* 让图片高度自适应 */
+}
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

@@ -1,0 +1,98 @@
+
+#bk {
+  background-image: url(../img/public_img/map-background.jpg);
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #111318;
+}
+
+.main {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  >h1 {
+    font-family: microsoft yahei, Helvetica, tahoma, simsun, sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #f0e6d2;
+    line-height: 1.2;
+    padding: 80px 0;
+  }
+
+  #regional_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .regional_card {
+      position: relative;
+      background-color: bisque;
+      width: 345px;
+      height: 200px;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(180deg, #1e2328, #1e2328);
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: 0 0 40px 0 #000;
+      margin: 15px;
+      transition: all 0.7s ease;
+
+      .mb {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        background-color: #010a13;
+        opacity: 0.7;
+        transition: all 0.5s ease;
+      }
+
+      >img {
+        transition: opacity .2s ease-in;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 45px;
+        right: 0;
+        height: 75px;
+        margin: auto;
+        transition: all 0.5s ease;
+      }
+
+      .title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #010a13;
+
+        >p {
+          color: #f0e6d2;
+          text-align: center;
+          line-height: 50px;
+          letter-spacing: 2px;
+          font-size: 1.6em;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .regional_card:hover>.mb {
+      opacity: 0;
+    }
+
+    .regional_card:hover>img {
+      opacity: 0;
+    }
+
+    .regional_card:hover {
+      border-image-source: linear-gradient(180deg, #f0e6d2, #c89b3c);
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+}

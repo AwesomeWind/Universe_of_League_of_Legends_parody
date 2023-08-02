@@ -1,0 +1,162 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/login_bk.jpg);
+    background-position: center -200px;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #f9f9f9;
+    width: 650px;
+    height: 415px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.form-box {
+    position: absolute;
+    left: 0;
+    background-color: #d13639;
+    width: 320px;
+    height: 415px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    transition: 0.5s ease-in-out;
+
+}
+
+.enroll-box,
+.login-box,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+img {
+    width: 120px;
+}
+.moveto{
+  transform: translateX(100%);
+}
+input[type="text"],
+input[type="password"] {
+    background-color: transparent;
+    width: 70%;
+    color: #f9f9f9;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    text-indent: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #f9f9f9;
+}
+
+input:focus {
+    color: black;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+input[type="button"]{
+    width: 70%;
+    margin-top: 35px;
+    background-color: #F6F6F6;
+    outline: none;
+    border-radius: 8px;
+    padding: 13px;
+    color: #d13639;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+input[type="button"]:hover {
+    background-color: #1877f2;
+    color: #f6f6f6;
+}
+
+.con-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.l {
+    left: -2%;
+}
+
+.r {
+    right: -2%;
+}
+
+.con-box h2 {
+    color: #8e9aaf;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.con-box p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #8e9aaf;
+    text-align: center;
+}
+
+.con-box span {
+    color: #d13639;
+
+}
+
+.con-box button {
+    margin-top: 3%;
+    background-color: #fff;
+    color: #d13639;
+    border: 1px solid #d3b7d8;
+    padding: 6px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.con-box button:hover {
+    background-color: #d13639;
+    color: #fff;
+
+}
