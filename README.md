@@ -61,3 +61,19 @@ Make sure that the dependencies on the frontend are installed correctly (either 
 如果发现8089端口占用问题，可以从后端配置文件application.yml中修改端口（切记修改后前端也需要修改，因为本人还不太会从前端将所有api请求映射到同一个路径中 所以前端向后端的请求都是写的完整路径）。
 
 If you find port 8089 occupancy problems, you can modify the port from the backend configuration file application.yml (remember that the frontend also needs to be modified after the modification, because I am not very good at mapping all API requests from the frontend to the same path, so the requests from the frontend to the backend are the full path written).
+
+
+
+### 效果
+
+![image-20230802120902928](README.assets/image-20230802120902928.png)
+
+![image-20230802120921014](README.assets/image-20230802120921014.png)
+
+![image-20230802120933205](README.assets/image-20230802120933205.png)
+
+![image-20230802120940366](README.assets/image-20230802120940366.png)
+
+![image-20230802120949293](README.assets/image-20230802120949293.png)
+
+![image-20230802121003585](README.assets/image-20230802121003585.png)
