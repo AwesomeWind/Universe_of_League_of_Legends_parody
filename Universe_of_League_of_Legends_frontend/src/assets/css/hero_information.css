@@ -1,3 +1,7 @@
+.HI_maind{
+  background-color: #09090c;
+  height: 1800px;
+}
 #head{
     width: 100vw;
     height: 812px;
@@ -37,8 +41,6 @@
     color: transparent;
 }
 #mind{
-    background-color: #09090c;
-    /* box-shadow: 0 -20px 100px #161c20; */
     width: 1280px;
     margin: 0 auto;
     height: 634px;
@@ -52,6 +54,7 @@
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    z-index: 99;
 }
 .left_1{
     background-color: #111318;
@@ -157,12 +160,25 @@
     padding: 30px;
 }
 .min{
-    box-shadow: 0 -50px 200px #161c20;
+    
     height: 100%;
     width: 758px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+.min::before{
+  content: "";
+  width: 140%;
+  height: 10%;
+  z-index: -1;
+  left:-25%;
+  border-radius: 45%;
+  position: absolute;
+  box-shadow: 0 0 100px #161c20;
+
 }
 .min_1{
     width: 100%;

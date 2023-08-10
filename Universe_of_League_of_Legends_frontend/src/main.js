@@ -9,9 +9,9 @@ const app = createApp(App)
 app.use(store)
 app.use(router)
 
-app.config.globalProperties['$get'] = get;
-app.config.globalProperties['$post'] = post;
-app.config.globalProperties['$axios'] = axios1;
+// app.config.globalProperties['$get'] = get;
+// app.config.globalProperties['$post'] = post;
+// app.config.globalProperties['$axios'] = axios1;
 
 app.mount("#app")
 

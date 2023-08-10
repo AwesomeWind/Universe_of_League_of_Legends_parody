@@ -224,6 +224,7 @@ body {
   font-weight: bolder;
   height: 100%;
   display: flex;
+  user-select:none;
 }
 .sort>p{
   line-height: 90px;

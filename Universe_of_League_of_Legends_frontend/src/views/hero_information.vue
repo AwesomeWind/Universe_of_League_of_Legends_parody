@@ -1,5 +1,5 @@
 <template>
-    <div v-if="update">
+    <div class="HI_maind" v-if="update">
         <div
             id="head"
             :style="{
@@ -324,7 +324,4 @@ export default {
 <style lang="css" src="../assets/css/Clear_style.css" scoped></style>
 <style lang="css" src="../assets/css/hero_information.css" scoped></style>
 <style>
-body {
-    background-color: #09090c;
-}
 </style>

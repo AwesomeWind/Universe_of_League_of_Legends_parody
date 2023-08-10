@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import featured from '../views/featured.vue'
 
 const routes = [
   {
@@ -8,7 +7,7 @@ const routes = [
     meta: {
       title: '《英雄联盟》宇宙',
     },
-    component: featured
+    component: () => import('../views/featured.vue'),
   },
   {
     path: '/HeroShowCase',

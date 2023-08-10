@@ -26,6 +26,7 @@ export default {
         //监听路由变化更新title
         $route(n, o) {
             document.title = n.meta.title;
+            window.scrollTo(0, 0); // 将滚动条位置设置为顶部
         },
     },
     //方法集合
@@ -54,8 +55,4 @@ export default {
 };
 </script>
 <style lang='css' scoped>
-body {
-    width: 100vw;
-    background-color: #09090c;
-}
 </style>

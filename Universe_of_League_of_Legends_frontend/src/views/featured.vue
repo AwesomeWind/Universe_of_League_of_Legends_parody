@@ -1,22 +1,42 @@
 <template>
     <div class='featured_mind'>
         <ContentCarousel></ContentCarousel>
-        <LatestHero></LatestHero>
+        <div class="bk _1">
+            <img
+                src="../assets/img/public_img/featured_bk_1.jpg"
+                alt=""
+            >
+        </div>
+        <Latest></Latest>
+        <div class="bk _2">
+            <img
+                src="../assets/img/public_img/featured_bk_2.jpg"
+                alt=""
+            >
+        </div>
+        <Selected></Selected>
         <CarouselHero></CarouselHero>
+        <img
+            src="../assets/img/public_img/featured_bk_3.png"
+            alt=""
+            class="_3"
+        >
         <CarouselRegiona></CarouselRegiona>
     </div>
 </template>
 <script>
 import { reactive, toRefs } from "vue";
 import ContentCarousel from "@/components/FeaturedContentCarousel.vue";
-import LatestHero from "@/components/FeaturedLatestHero.vue";
+import Latest from "@/components/FeaturedLatest.vue";
+import Selected from "@/components/FeaturedSelected.vue";
 import CarouselHero from "@/components/FeaturedCarouselHero.vue";
 import CarouselRegiona from "@/components/FeaturedCarouselRegional.vue";
 export default {
     name: "featured",
     components: {
         ContentCarousel,
-        LatestHero,
+        Latest,
+        Selected,
         CarouselHero,
         CarouselRegiona,
     },
@@ -47,6 +67,41 @@ export default {
 </script>
 <style lang='less' scoped>
 .featured_mind {
-    background-color: wheat;
+    background-color: #0a0a0c;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    .bk {
+        width: 100vw;
+        position: absolute;
+        > img {
+            opacity: 0.2;
+            width: 100%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: radial-gradient(
+                transparent 10%,
+                #0a0a0c 80%,
+                #0a0a0c 100%
+            );
+        }
+    }
+    ._1 {
+        top: 300px;
+    }
+    ._2 {
+        top: 1200px;
+    }
+    ._3 {
+        position: absolute;
+        width: 464px;
+        left: calc(50vw - 232px);
+        top: 3600px;
+    }
 }
 </style>
